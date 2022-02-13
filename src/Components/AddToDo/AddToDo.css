@@ -1,0 +1,21 @@
+.add-box {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px 12px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 2px #767d99 solid;
+    transition: border 0.3s ease-in;
+  }
+
+input:focus{
+  outline: none;
+  border-bottom: 2px #d17b88 solid;
+}

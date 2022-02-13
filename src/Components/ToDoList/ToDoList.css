@@ -1,0 +1,28 @@
+.item-list {
+    height: 80%;
+    margin: 1rem 0;
+    width: calc(100% + 1rem);
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    scrollbar-width: auto;
+    scrollbar-color: #0d1821d1 #fef9ff;
+}
+
+/* Chrome, Edge, and Safari */
+.item-list::-webkit-scrollbar {
+    width: 15px;
+}
+
+.item-list::-webkit-scrollbar-track {
+    background: #fef9ff;
+}
+
+.item-list::-webkit-scrollbar-thumb {
+    background-color: #0d1821d1;
+}
+
+
+
+
+

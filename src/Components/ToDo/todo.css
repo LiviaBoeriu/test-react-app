@@ -1,0 +1,22 @@
+.todo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.9rem 0;
+}
+
+.todo.is-done {
+    text-decoration: line-through;
+    color: #1F6F66;
+}
+
+.todo-text{
+    padding: 0 0.5rem;
+}
+
+.todo-button {
+    all:unset;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+}
