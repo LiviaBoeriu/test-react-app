@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
+import CurrentDate from '../CurrentDate/CurrentDate';
 import './AddToDo.css';
 
 class AddToDo extends React.Component {
@@ -35,9 +36,12 @@ class AddToDo extends React.Component {
 
     render() {
         return (
-            <div className="add-box">
-                <input type="text" id="addToDo" name="addToDo" placeholder='Add a new to do' value={this.state.value} onChange={this.handleChange} onKeyPress={this.handleKeyPress} />
-                <Button className="add-button" handleClick={this.handleClick} />
+            <div className='add-box'>
+                <CurrentDate />
+                <div className="enter-box">
+                    <input type="text" id="addToDo" name="addToDo" placeholder='Add a new to do' value={this.state.value} onChange={this.handleChange} onKeyPress={this.handleKeyPress} />
+                    <Button className="add-button" handleClick={this.handleClick} />
+                </div>
             </div>
         )
     }
