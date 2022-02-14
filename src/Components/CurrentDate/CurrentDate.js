@@ -1,7 +1,6 @@
 import React from 'react';
 
 class CurrentDate extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -10,12 +9,14 @@ class CurrentDate extends React.Component {
         this.initDate = this.initDate.bind(this)
     }
 
+    // Assign the current date to the state of the component
     initDate() {
         const date = new Date();
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
 
         let currentMonth;
 
+        // Assign a month string based on the current month
         months.forEach((month, i) => {
             if (i === date.getMonth()) {
                 currentMonth = month;
@@ -31,6 +32,7 @@ class CurrentDate extends React.Component {
         })
     }
 
+    // Call the date initiation function when component mounts on the DOM
     componentDidMount() {
         this.initDate()
     }
@@ -46,7 +48,5 @@ class CurrentDate extends React.Component {
         );
     }
 }
-
-
 
 export default CurrentDate;

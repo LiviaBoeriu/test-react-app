@@ -14,10 +14,12 @@ class AddToDo extends React.Component {
         this.handleKeyPress = this.handleKeyPress.bind(this);
     }
 
+    // On change assign the input value to the state
     handleChange = (e) => {
         this.setState({ value: e.target.value });
     };
 
+    // Function to add a new to do to the list
     handleClick() {
         if (!this.state.value.length) {
             console.log('Upps you must have text')
@@ -27,6 +29,8 @@ class AddToDo extends React.Component {
         }
     }
 
+    // On enter add a new to do to the list
+    // Missing handling in case input is empty
     handleKeyPress(e) {
         if (e.charCode === 13) {
             this.props.addToDo(this.state.value);

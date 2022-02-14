@@ -19,7 +19,7 @@ class App extends React.Component {
         this.completeToDo = this.completeToDo.bind(this);
     }
 
-    // Function to add new to do items to the list
+    // Add a new to do items to the to do list in state
     addToDo(item) {
         this.setState(prevState => {
             const todoList = prevState.toDoList
@@ -36,6 +36,7 @@ class App extends React.Component {
         })
     }
 
+    // Delete a todo from the state using the id
     deleteTodo(id) {
         this.setState(prevState => {
             let todoList = prevState.toDoList
@@ -47,6 +48,7 @@ class App extends React.Component {
         })
     }
 
+    // Set state of todo to completed
     completeToDo(id) {
         this.setState(prevState => {
             let todoList = prevState.toDoList

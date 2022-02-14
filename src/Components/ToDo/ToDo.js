@@ -3,7 +3,6 @@ import './todo.css';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 function ToDo(props) {
-
     return (
         <li className={`todo ${props.data.isDone ? 'is-done' : ''}`}>
             <button className='todo-button' onClick={() => { props.deleteTodo(props.data.id) }}><DeleteIcon /></button>
